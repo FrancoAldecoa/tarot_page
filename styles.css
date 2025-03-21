@@ -98,7 +98,7 @@ main {
   text-align: center;
 }
 
-#servicios {
+.carta {
   padding: 20px;
   background-color: white;
   max-width: 600px;
@@ -107,6 +107,17 @@ main {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.carta2 {
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
 /* Productos */
 #productos {
   display: grid;
