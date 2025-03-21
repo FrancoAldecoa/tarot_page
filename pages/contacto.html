@@ -8,12 +8,15 @@
   </head>
   <body>
     <header>
-      <img
-        src="../img/logo.png"
-        alt="logo de la empresa"
-        width="200"
-        height="200"
-      />
+      <div class="logo">
+        <img
+          src="../img/logo.png"
+          alt="logo de la empresa"
+          width="100%"
+          height="100%"
+        />
+      </div>
+
       <nav>
         <ul>
           <li>
@@ -36,11 +39,57 @@
     </header>
 
     <main>
-      <h1>Contacto</h1>
+      <!-- Contenido principal de la página -->
+      <h1>Bienvenido a Nuestro Sitio de Contacto</h1>
+      <p>
+        Si tienes alguna pregunta o necesitas ayuda, no dudes en contactarnos.
+      </p>
+
+      <!-- Sección del formulario de servicios -->
+      <section id="servicios">
+        <h2>Formulario de Contacto</h2>
+        <form action="/enviar-formulario" method="POST">
+          <label for="nombre">Nombre:</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            required
+            placeholder="Tu nombre"
+          />
+
+          <label for="email">Correo Electrónico:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Tu correo electrónico"
+          />
+          <label for="telefono">Telefono:</label>
+          <input
+            type="tel"
+            id="telefono"
+            name="telefono"
+            required
+            placeholder="Tu telefono"
+          />
+
+          <label for="asunto">Asunto:</label>
+          <textarea
+            id="asunto"
+            name="asunto"
+            rows="4"
+            placeholder="Detalles adicionales"
+          ></textarea>
+
+          <button type="submit">Enviar Solicitud</button>
+        </form>
+      </section>
     </main>
 
     <footer>
-      <p>Todos los derechos reservados</p>
+      <p>&copy; 2025 Todos los derechos reservados</p>
     </footer>
   </body>
 </html>
